@@ -21,6 +21,9 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/updatable_apex.mk)
 # Project ID Quota.
 $(call inherit-product, $(SRC_TARGET_DIR)/product/emulated_storage.mk)
 
+# Include signing keys
+-include vendor/lineage-priv/keys/keys.mk
+
 QCV_FAMILY_SKUS := parrot ravelin
 
 # AAPT

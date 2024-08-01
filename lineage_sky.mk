@@ -21,6 +21,13 @@ $(call inherit-product, $(DEVICE_PATH)/device.mk)
 # Inherit from the proprietary version
 $(call inherit-product, vendor/xiaomi/sky/sky-vendor.mk)
 
+# Project Matrixx
+MATRIXX_BUILD_TYPE := Unofficial
+MATRIXX_MAINTAINER := alanpdk
+MATRIXX_CHIPSET := SM4450
+MATRIXX_BATTERY := 5000mAh
+MATRIXX_DISPLAY := 1080x2460
+
 ## Device identifier
 PRODUCT_DEVICE := sky
 PRODUCT_NAME := lineage_sky
@@ -30,3 +37,15 @@ PRODUCT_MANUFACTURER := Xiaomi
 
 # GMS
 PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
+
+# Gapps
+WITH_GMS := true
+
+# Nuke AudioFX
+TARGET_EXCLUDES_AUDIOFX := true
+
+# Blur effect
+TARGET_ENABLE_BLUR := true
+
+# Quick TAP
+TARGET_SUPPORTS_QUICK_TAP := true
