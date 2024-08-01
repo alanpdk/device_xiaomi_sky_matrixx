@@ -592,4 +592,6 @@ PRODUCT_PACKAGES += \
     libnl \
     libwfdaac_vendor
 
-
+# Remove packages
+PRODUCT_PACKAGES += \
+    RemovePackages
