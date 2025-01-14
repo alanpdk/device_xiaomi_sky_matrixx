@@ -151,4 +151,7 @@ static const std::vector<variant_info_t> variants = {
 
 void vendor_load_properties() {
     search_variant(variants);
+	// Set RisingOS Stuff
+    property_override("ro.rising.maintainer", "alanpdk");
+    property_override("ro.rising.chipset", "Snapdragon 4 Gen 2");
 }
